@@ -1,10 +1,9 @@
-package unik
+package uuid
 
 import (
-	"fmt"
 	"strings"
 
-	uuid "github.com/satori/go.uuid"
+	satoriUUID "github.com/satori/go.uuid"
 )
 
 const (
@@ -14,11 +13,9 @@ const (
 )
 
 func NewUUID() string {
-	id, err := uuid.NewV4()
-	if err != nil {
-		fmt.Printf("unable to get uuid.")
-	}
-	u1 := uuid.Must(id, err).String()
+	id := satoriUUID.NewV4()
+	var err error
+	u1 := satoriUUID.Must(id, err).String()
 	// remove all dashes
 	// -1 means, all occurrences
 	u2 := strings.Replace(u1, Hyphen, EmptyString, ValNegativeOne)
