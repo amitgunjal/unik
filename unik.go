@@ -1,4 +1,4 @@
-package uuid
+package unik
 
 import (
 	"strings"
@@ -13,7 +13,7 @@ const (
 )
 
 func NewUUID() string {
-	id := satoriUUID.NewV4()
+	id, _ := satoriUUID.NewV4()
 	var err error
 	u1 := satoriUUID.Must(id, err).String()
 	// remove all dashes
