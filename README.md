@@ -14,7 +14,9 @@ Go language.
 
 Use the go command:
 
+```go
 $ go get github.com/amitgunjal/unik
+```
 
 ```go
 package main
