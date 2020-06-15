@@ -1,6 +1,6 @@
 # Unik
 
-A UUID without hypens
+A UUID without hypens package for golang.
 
 ## Getting Started
 
@@ -36,7 +36,6 @@ func main() {
 
 * [go.uuid](https://github.com/satori/go.uuid) - The Go package used.
 
-
 ## Authors
 
 * **Amit Gunjal** follow at [amitgunjal](https://github.com/amitgunjal)
@@ -44,5 +43,3 @@ func main() {
 ## Acknowledgments
 
 * [go.uuid](https://github.com/satori/go.uuid)
-* Inspiration
-* etc
